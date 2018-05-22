@@ -5,35 +5,104 @@
     android:id="@+id/linearLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="89dp">
 
     <org.osmdroid.views.MapView
         android:id="@+id/map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/navigation"
-        app:layout_constraintStart_toStartOf="@+id/navigation" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/validerMulti"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="140dp"
+        android:text="Valider"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/comportementClic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/comportementClic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Parcelle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1">
+
+        <RadioButton
+            android:id="@+id/parcelleUnique"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parcelle_unique"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <RadioButton
+            android:id="@+id/parcelleMultiple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parcelle_multiple"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="240dp" />
+    </RadioGroup>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/comportementRecherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="104dp"
+        android:text="Recherche"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1">
+
+        <RadioButton
+            android:id="@+id/recherchePrecise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recherche_pr_cise"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <RadioButton
+            android:id="@+id/rechercheElargie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recherche_largie"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="240dp" />
+    </RadioGroup>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/navigation" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
         android:checked="false"
         android:showText="true"
         android:text="Vue"
         android:textOff="aérienne"
         android:textOn="ancienne"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="@+id/map"
-        app:layout_constraintTop_toTopOf="@+id/map" />
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/navigation" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
