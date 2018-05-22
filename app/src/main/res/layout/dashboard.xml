@@ -1,684 +1,656 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.guillaume.onglets.MainActivity"
-    tools:layout_editor_absoluteY="89dp">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.guillaume.onglets.MainActivity"
+        tools:layout_editor_absoluteY="89dp">
 
-    <!--<FrameLayout-->
-    <!--android:id="@+id/content"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="0dp"-->
-    <!--android:layout_weight="1">-->
-
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="72dp"
-        android:text="toit"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <EditText
-        android:id="@+id/layoutParameters"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="152dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        android:maxWidth="350dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="152dp"
-        android:maxWidth="350dp"
-        android:visibility="invisible"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:visibility="invisible"
-        android:layout_marginTop="152dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters3"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="152dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters4"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="224dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="220dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters6"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="220dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters7"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="220dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters8"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="284dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="284dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters10"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:visibility="invisible"
-        android:layout_marginTop="284dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters11"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="284dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters12"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="348dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters15"
-        android:layout_width="wrap_content"
-        android:visibility="invisible"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="348dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters14"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:visibility="invisible"
-        android:layout_marginTop="348dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters15"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="348dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters16"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="408dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="408dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters18"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="408dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters19"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="408dp"
-        android:text="layoutParameters"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters20"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="468dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="472dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters22"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="468dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters23"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="468dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters24"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="536dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="536dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="536dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters27"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="536dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters28"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="592dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="592dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters30"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="592dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters31"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="592dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters32"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/layoutParameters34"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="592dp"
-        android:text="layoutParameters"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/layoutParameters33"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <EditText
-        android:id="@+id/et2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="72dp"
-        android:hint="@string/motdirecte"
-        android:inputType="textMultiLine"
-        android:maxHeight="50dp"
-        android:maxWidth="350dp"
-        android:scrollbars="vertical"
-        android:outlineProvider="bounds"
-        app:layout_constraintStart_toEndOf="@+id/et3"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <Button
-        android:id="@+id/valider"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_marginStart="292dp"
-        android:layout_marginTop="16dp"
-        android:text="Valider"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1" />
-
-    <Button
-        android:id="@+id/précédent"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_marginStart="900dp"
-        android:layout_marginTop="16dp"
-        android:onClick="fichePrecedente"
-        android:text="Précédent"
-        android:textAllCaps="false"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1" />
-
-    <Button
-        android:id="@+id/suivant"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_marginStart="1000dp"
-        android:layout_marginTop="16dp"
-        android:onClick="ficheSuivante"
-        android:text="Suivant"
-        android:textAllCaps="false"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="33dp"
-        android:layout_marginStart="16dp"
-        android:text="Fiche suivante"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:layout_marginStart="2dp"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        app:layout_constraintBottom_toBottomOf="@+id/layoutParameters21"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1">
+        <!--<FrameLayout-->
+        <!--android:id="@+id/content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1">-->
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButton5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.14"
-            android:text="en U"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="72dp"
+            android:text="toit"
             android:visibility="invisible"
-            tools:layout_editor_absoluteX="96dp"
-            tools:layout_editor_absoluteY="201dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
 
-        <RadioButton
-            android:id="@+id/radioButton6"
+        <EditText
+            android:id="@+id/layoutParameters"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.14"
-            android:text="symétrique"
-            android:visibility="invisible"
-            tools:layout_editor_absoluteX="96dp"
-            tools:layout_editor_absoluteY="201dp" />
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="152dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <RadioButton
-            android:id="@+id/radioButton3"
+        <EditText
+            android:id="@+id/layoutParameters3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.14"
-            android:text="symétrique"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="152dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="152dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="152dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="224dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="220dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="220dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="220dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="284dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="284dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters10"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="284dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="284dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters12"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="348dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="348dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters14"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="348dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="348dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters16"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="408dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="408dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters18"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="408dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters19"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="408dp"
+            android:text="layoutParameters"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters20"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutParameters22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="468dp"
+            android:text="layoutParameters"
             android:visibility="invisible"
-            tools:layout_editor_absoluteX="96dp"
-            tools:layout_editor_absoluteY="201dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </RadioGroup>
+        <EditText
+            android:id="@+id/layoutParameters23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="472dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters22"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <!--</FrameLayout>-->
+        <EditText
+            android:id="@+id/layoutParameters24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="468dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters23"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/navigation" />
+        <EditText
+            android:id="@+id/layoutParameters25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="468dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters24"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mur1"
-        android:visibility="invisible"
-        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox3"
-        app:layout_constraintStart_toEndOf="@+id/checkBox3" />
+        <EditText
+            android:id="@+id/layoutParameters26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="536dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/message3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="204dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/navigation"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/layoutParameters27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="208dp"
+            android:layout_marginTop="536dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/message4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/layoutParameters28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="536dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters27"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="40dp"
-        android:text="DATE_MODIF :"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/layoutParameters29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="536dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters28"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
-        android:text="DATE_CREA :"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/layoutParameters30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="592dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/message5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/layoutParameters31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="592dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters30"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
-        android:text="@string/mur2"
-        android:visibility="invisible"
-        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox3"
-        app:layout_constraintStart_toStartOf="@+id/layoutParameters21" />
+        <EditText
+            android:id="@+id/layoutParameters32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="592dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters31"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mur3"
-        android:visibility="invisible"
-        app:layout_constraintStart_toEndOf="@+id/checkBox2"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+        <EditText
+            android:id="@+id/layoutParameters33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="592dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters32"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/et1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="72dp"
-        android:hint="@string/reference_cadastrale"
-        android:inputType="textMultiLine"
-        android:maxHeight="50dp"
-        android:maxWidth="350dp"
-        android:scrollbars="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <EditText
-        android:id="@+id/et3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="72dp"
-        android:hint="@string/adresse"
-        android:inputType="textMultiLine"
-        android:maxHeight="50dp"
-        android:maxWidth="350dp"
-        android:scrollbars="vertical"
-        android:outlineProvider="bounds"
-        app:layout_constraintStart_toEndOf="@+id/et1"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <EditText
-        android:id="@+id/et4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="644dp"
-        android:layout_marginTop="76dp"
-        android:hint="@string/coordX"
-        android:inputType="textMultiLine"
-        android:maxHeight="50dp"
-        android:maxWidth="350dp"
-        android:scrollbars="vertical"
-        android:outlineProvider="bounds"
-        android:visibility="gone"
-        app:layout_constraintStart_toEndOf="@+id/et3"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <EditText
-        android:id="@+id/et5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="72dp"
-        android:hint="@string/coordY"
-        android:inputType="textMultiLine"
-        android:maxHeight="50dp"
-        android:maxWidth="350dp"
-        android:scrollbars="vertical"
-        android:outlineProvider="bounds"
-        android:visibility="gone"
-        app:layout_constraintStart_toEndOf="@+id/et4"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        <EditText
+            android:id="@+id/layoutParameters34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="592dp"
+            android:text="layoutParameters"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/layoutParameters33"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="72dp"
+            android:hint="@string/motdirecte"
+            android:inputType="text"
+            android:outlineProvider="bounds"
+            app:layout_constraintStart_toEndOf="@+id/et3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="16dp"
+            android:text="Valider"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <Button
+            android:id="@+id/précédent"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="1012dp"
+            android:layout_marginTop="16dp"
+            android:onClick="fichePrecedente"
+            android:text="Précédent"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <Button
+            android:id="@+id/suivant"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="1100dp"
+            android:layout_marginTop="16dp"
+            android:onClick="ficheSuivante"
+            android:text="Suivant"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="33dp"
+            android:layout_marginStart="16dp"
+            android:text="Fiche suivante"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="2dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="@+id/layoutParameters21"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1">
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:text="en U"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="201dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:text="symétrique"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="201dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:text="symétrique"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="201dp" />
+
+        </RadioGroup>
+
+        <!--</FrameLayout>-->
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="249dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/navigation" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mur1"
+            android:visibility="invisible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox3"
+            app:layout_constraintStart_toEndOf="@+id/checkBox3" />
+
+        <TextView
+            android:id="@+id/message3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/navigation"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/message4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="908dp"
+            android:layout_marginTop="96dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="808dp"
+            android:layout_marginTop="96dp"
+            android:text="DATE_MODIF :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="808dp"
+            android:layout_marginTop="72dp"
+            android:text="DATE_CREA :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/message5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="908dp"
+            android:layout_marginTop="72dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:text="@string/mur2"
+            android:visibility="invisible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox3"
+            app:layout_constraintStart_toStartOf="@+id/layoutParameters21" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mur3"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/checkBox2"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="72dp"
+            android:hint="@string/reference_cadastrale"
+            android:inputType="textMultiLine"
+            android:outlineProvider="bounds"
+            android:singleLine="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="72dp"
+            android:hint="@string/adresse"
+            android:inputType="text"
+            android:outlineProvider="bounds"
+            app:layout_constraintStart_toEndOf="@+id/et1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="644dp"
+            android:layout_marginTop="76dp"
+            android:hint="@string/coordX"
+            android:inputType="text"
+            android:outlineProvider="bounds"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/et3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <EditText
+            android:id="@+id/et5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="72dp"
+            android:hint="@string/coordY"
+            android:inputType="text"
+            android:outlineProvider="bounds"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/et4"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</HorizontalScrollView>
